@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "rootDir": "./frond/",
+    "noImplicitAny": true,
+    "strict": true,
+    "target": "ES2017",
+    "module": "commonjs",
+  }
+}
