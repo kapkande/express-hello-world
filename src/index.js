@@ -18,6 +18,7 @@ const app = express();
 const PORT = process.env.PORT || 3000
 app.set('views', path.resolve(__dirname, 'ejs'));
 app.set('view engine', 'ejs');
+app.engine('ejs', require('ejs').__express);
 app.use(express.static(path.resolve(__dirname, 'assets')))
 
 app.get('/', (req, res) => {
